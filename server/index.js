@@ -24,7 +24,7 @@ const password = process.env.DB_PASSWORD;
 const PORT = 3001;
 
 // Connection(username, password);
-mongoose.connect('mongodb+srv://aryangupta005:aryan@clone-inshorts.pvz1mcg.mongodb.net/?retryWrites=true&w=majority&appName=clone-inshorts')
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.fidcjoq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`)
 .then(()=>{
     app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
     // DefaultData();

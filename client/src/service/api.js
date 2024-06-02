@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:3001';
+const URL = 'https://news-app-alpha-steel.vercel.app';
 
 export const getNews = async (page, size = 5) => {
     try {
